@@ -21,7 +21,7 @@
 
 /obj/item/weapon/gun/projectile/liberator/Initialize()
 	. = ..()
-	if(prob(80)) liferemaining = rand(13,15)
+	if(rand(1,5) != 1) liferemaining = rand(13,15)
 	else liferemaining = rand(16,30)
 	damage_multiplier = (rand(6,9)/10)
 	update_icon()

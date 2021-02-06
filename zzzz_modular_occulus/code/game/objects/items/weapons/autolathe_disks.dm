@@ -34,7 +34,7 @@
 		/datum/design/autolathe/gun/mk4 = 3,
 		/datum/design/autolathe/gun/ec9 = 3,
 		/datum/design/autolathe/gun/rx8 = 3,
-		/datum/design/autolathe/gun/liberator = 1,
+		/datum/design/autolathe/gun/liberator = 0,
 		/datum/design/autolathe/ammo/magazine_pistol/rubber,
 		/datum/design/autolathe/ammo/magazine_hpistol/rubber,
 		/datum/design/autolathe/ammo/smg/rubber,
