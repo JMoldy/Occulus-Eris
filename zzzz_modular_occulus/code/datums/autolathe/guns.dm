@@ -14,3 +14,8 @@
 /datum/design/autolathe/gun/rx8
 	name = "PCC .35 Auto \"RX8\""
 	build_path = /obj/item/weapon/gun/projectile/automatic/rx8
+
+// blow your face off with this disposable pistol
+/datum/design/autolathe/gun/liberator
+	name = "DP .35 Auto \"Liberator\""
+	build_path = /obj/item/weapon/gun/projectile/liberator
