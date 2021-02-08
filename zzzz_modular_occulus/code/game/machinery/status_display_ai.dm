@@ -17,5 +17,5 @@ var/list/ai_status_emotions = list(
 	"Friend Computer" 			= new /datum/ai_emotion("ai_friend"),
 	"Tribunal" 					= new /datum/ai_emotion("ai_tribunal", "serithi"),
 	"Tribunal Malfunctioning"	= new /datum/ai_emotion("ai_tribunal_malf", "serithi")
-	"Sphinx"				= new /datum/ai_emotion("ai_feline")
+	"Sphinx"					= new /datum/ai_emotion("ai_sphinx")
 	)
