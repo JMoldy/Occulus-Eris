@@ -19,6 +19,12 @@
 	var/liferemaining = 0
 	var/roundsloaded = 0
 
+/obj/item/weapon/gun/projectile/liberator/update_icon()
+	var/iconstring = initial(icon_state)
+	liferemaining == 0 ? (iconstring = "liberator_melt") : (iconstring = "liberator_[roundsloaded]")
+	icon_state = iconstring
+	..()
+
 /obj/item/weapon/gun/projectile/liberator/Initialize()
 	. = ..()
 	if(rand(1,5) != 1) liferemaining = rand(13,15)
@@ -27,13 +33,7 @@
 	update_icon()
 
 
-/obj/item/weapon/gun/projectile/liberator/update_icon()
-	..()
-	var/iconstring = initial(icon_state)
-	if (liferemaining == 0)
-		iconstring = "liberator_melt"
-	else iconstring = "liberator_[roundsloaded]"
-	icon_state = iconstring
+
 
 /obj/item/weapon/gun/projectile/liberator/handle_post_fire()
 	roundsloaded -= 1 //Move me to the IF statement below once the ejection issue is resolved
